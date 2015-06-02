@@ -73,6 +73,15 @@ Faker::Bitcoin.testnet_address #=> ""msHGunDvoEwmVFXvd2Bub1SNw5RP1YHJaf""
 
 ```
 
+###Faker::Bsn
+-----------------
+
+```ruby
+
+Faker::Bsn.bsn #=> 123456782
+
+```
+
 ###Faker::Business
 ------------------
 
