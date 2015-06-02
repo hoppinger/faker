@@ -4,6 +4,7 @@ module Faker
       # returns a valid bsn number of length 8 or 9
       def bsn
         loop do
+          # TODO: (dunyakirkali) use inject
           bsn = ''
           total = 0
           (0..8).each do |i|
@@ -12,7 +13,7 @@ module Faker
             bsn += rnd.to_s
           end
           bsn.concat(total % 11)
-          return bsn.to_i if total % 11 == 0
+          bsn.to_i if total % 11 == 0
         end
       end
     end
