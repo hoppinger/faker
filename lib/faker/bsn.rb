@@ -11,8 +11,7 @@ module Faker
             bsn += random_number.to_s
             total += random_number * (i == 8 ? -1 : (9 - i))
           end
-          elf_proof = total % 11
-          return bsn.to_i if elf_proof == 0
+          return bsn.to_i if total % 11 == 0
         end
       end
 
