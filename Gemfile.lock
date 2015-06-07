@@ -7,8 +7,17 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    docile (1.1.5)
     i18n (0.6.9)
+    json (1.8.3)
     rake (10.1.0)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    simplecov-rcov (0.2.3)
+      simplecov (>= 0.4.1)
     test-unit (2.5.5)
 
 PLATFORMS
@@ -17,4 +26,6 @@ PLATFORMS
 DEPENDENCIES
   faker!
   rake
+  simplecov
+  simplecov-rcov
   test-unit
