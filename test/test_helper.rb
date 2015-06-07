@@ -1,3 +1,7 @@
+require 'simplecov'
+require 'simplecov-rcov'
+SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.start
 require 'test/unit'
 require 'rubygems'
 require 'yaml'
