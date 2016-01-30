@@ -510,6 +510,16 @@ Faker::University.name #=> "South Texas College"
 
 ```
 
+###Faker::Bsn
+------------------
+
+```ruby
+
+# Random Burger Serice Nummer
+Faker::Bsn.bsn
+
+```
+
 Customization
 ------------
 Since you may want to make addresses and other types of data look different
