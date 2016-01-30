@@ -6,21 +6,16 @@ module Faker
       def bsn
         loop do
           bsn = ""
-          numbers = zero_to_eight_or_nine_list
-          total = (numbers).inject do |total, i|
+          total = (0..9).inject do |total, i|
             random_number = random_for(i)
             bsn += random_number.to_s
-            total += random_number * (i == numbers.last ? -1 : ((numbers.last+1) - i))
+            total += random_number * (i == 9 ? -1 : (10 - i))
           end
-          return bsn.to_i if dividable_by_eleven(total)
+          return bsn if dividable_by_eleven(total)
         end
       end
 
       private
-
-      def zero_to_eight_or_nine_list
-        [(0..8), (0..9)][rand(2)]
-      end
 
       def dividable_by_eleven n
         n % 11 == 0
