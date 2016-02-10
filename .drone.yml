@@ -7,7 +7,6 @@ build:
     - bundler
   commands:
     - apt-get update -qq
-    - gem install rspec
     - apt-get install -y -qq build-essential &>/dev/null
     - bundle install --jobs $(nproc) --path bundler
-    - bundle exec rspec --color spec
+    - bundle exec rake
