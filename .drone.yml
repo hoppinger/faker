@@ -1,0 +1,12 @@
+cache:
+  mount:
+    - bundler
+build:
+  image: ruby:2.2.3
+  cache:
+    - bundler
+  commands:
+    - apt-get update -qq
+    - apt-get install -y -qq build-essential &>/dev/null
+    - bundle install --jobs $(nproc) --path bundler --without development testing staging production
+    - bundle exec rspec --color spec
