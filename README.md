@@ -1,5 +1,7 @@
 Faker
 =====
+[![Build Status](http://drone.hoppinger.com/api/badges/hoppinger/faker/status.svg)](http://drone.hoppinger.com/hoppinger/faker)
+
 This gem is a port of Perl's Data::Faker library that generates fake data.
 
 It comes in very handy for taking screenshots (taking screenshots for my
