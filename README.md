@@ -2,16 +2,6 @@ Faker
 =====
 [![Build Status](http://drone.hoppinger.com/api/badges/hoppinger/faker/status.svg)](http://drone.hoppinger.com/hoppinger/faker)
 
-This gem is a port of Perl's Data::Faker library that generates fake data.
-
-It comes in very handy for taking screenshots (taking screenshots for my
-project, [Catch the Best](http://catchthebest.com/) was the original impetus
-for the creation of this gem), having real-looking test data, and having your
-database populated with more than one or two records while you're doing
-development.
-
-NOTE: While Faker generates data at random, returned values are not guaranteed to be unique.
-
 Installing
 ----------
 ```bash
