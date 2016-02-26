@@ -1,7 +1,6 @@
 Faker
 =====
 
-
 Installing
 ----------
 ```bash
