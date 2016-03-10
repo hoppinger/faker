@@ -2,7 +2,7 @@ cache:
   mount:
     - bundler
 build:
-  image: ruby:2.2.3
+  image: ruby:$$RUBY_VERSION
   cache:
     - bundler
   commands:
