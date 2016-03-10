@@ -10,3 +10,7 @@ build:
     - apt-get install -y -qq build-essential &>/dev/null
     - bundle install --jobs $(nproc) --path bundler
     - bundle exec rake
+matrix:
+  RUBY_VERSION:
+    - 1.9.3
+    - 2.2.3
